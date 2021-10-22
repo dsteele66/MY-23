@@ -1,0 +1,43 @@
+{% extends 'twentythree/main.html' %}
+{% load static %}
+{% block content %}
+<!-- <img style="height: 200px;" src="../../../static/images/23trio.png" alt=""> -->
+
+<h1 style="color: whitesmoke;">Welcome to My23!</h1>
+    <!-- <img style="width: 100%; height: 10%;" src="../../../static/images/jordan.png" alt=""> -->
+    <div class="row">
+        {% for product in products %}
+        <div  class="col-lg-4">
+            <img  class="thumbnail" src="{{product.imageURL}}">
+            <div style="background-color: rgb(167, 24, 24);"class="box-element product">
+                <h6 style="color: black;"><strong>{{product.name}}</strong></h6>
+                <hr>
+                <button style="color: black;" data-product={{product.id}} data-action="add"class=" btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                <!-- <a class="btn btn-outline-success" href="#">View</a> -->
+                <h4 style="display: inline-block;float: right; color: black">${{product.price|floatformat:2}}</h4>
+                
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+
+  
+    <div class="row">
+        <img style="height: 600px; width: 1150px;" src="../../../static/images/shot.png" alt="">
+        {% for product in products %}
+        <div  class="col-lg-4">
+            <img  class="thumbnail" src="{{product.imageURL}}">
+            <div style="background-color: rgb(167, 24, 24);"class="box-element product">
+                <h6 style="color: black;"><strong>{{product.name}}</strong></h6>
+                <hr>
+                <button style="color: black;" data-product={{product.id}} data-action="add"class=" btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+                <!-- <a class="btn btn-outline-success" href="#">View</a> -->
+                <h4 style="display: inline-block;float: right; color: black">${{product.price|floatformat:2}}</h4>
+                
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+{% endblock content %}
