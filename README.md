@@ -16,7 +16,7 @@ Order model {Orders}
 
 React component hierarchy (if applicable)
 User stories
-As a customer, I want to shop from home for coffee beans, because it is convenient and easy.
+As a customer, I want to shop from anywhere for my shoes
 A user should be able to login in with their personal UserID and password.
 As a customer, I want to see details for specific shoes and details on their origin.
 As a customer, I want to be able to make purchases.
@@ -29,3 +29,15 @@ Stretch Goals:
 As an admin, I want to receive order information in a clear and concise format, so I can mail the product to the customer.
 As a user, I want to be able to buy clothes on the app as well
 As a user, I want there to be categories in order for me to find what I want easily.
+As a user, I want to have filter or search functionality.
+
+Stretch Goals:
+As an admin, I want to receive order information in a clear and concise format, so I can mail the product to the customer.
+As a user, I want to be able to buy clothes on the app as well
+As a user, I want there to be categories in order for me to find what I want easily.
+
+![image](https://user-images.githubusercontent.com/81034105/138507022-ead6119a-2570-45a2-8d77-7d548acbcc2f.png)
+
+![image](https://user-images.githubusercontent.com/81034105/138507039-ec4adbb6-08df-49ac-a96d-f57d46387b21.png)
+
+
